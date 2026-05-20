@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.4",
   "rules": [
     {
       "id": "sbxh_webtoon",
@@ -29,11 +29,9 @@
       },
       "viewer": {
         "fetchMethod": "iframe",
-        "remove": [
-          "[aria-label='배너 광고']"
-        ],
+        "remove": [".a28415453-br", "[aria-label='배너 광고']"],
         "imageContainer": "div.vw-imgs",
-        "imageItem": "img:not([aria-label='배너 광고'] img, button img)",
+        "imageItem": "img:not(.a28415453-br img, button img)",
         "lazyAttrOptions": [
           "data-src",
           "data-lazy",
@@ -69,11 +67,9 @@
       },
       "viewer": {
         "fetchMethod": "iframe",
-        "remove": [
-          "[aria-label='배너 광고']"
-        ],
+        "remove": [".a28415453-br", "[aria-label='배너 광고']"],
         "imageContainer": "div.vw-imgs",
-        "imageItem": "img:not([aria-label='배너 광고'] img, button img)",
+        "imageItem": "img:not(.a28415453-br img, button img)",
         "lazyAttrOptions": [
           "data-src",
           "data-lazy",
@@ -114,9 +110,7 @@
           "cookieName": "nv",
           "clientHeader": "shadow-v2"
         },
-        "remove": [
-          "[aria-label='배너 광고']"
-        ],
+        "remove": [".a28415453-br", "[aria-label='배너 광고']"],
         "novelContent": "article.novel-viewer",
         "imageContainer": "article.novel-viewer",
         "imageItem": "p",
