@@ -1,5 +1,5 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.6",
   "rules": [
     {
       "id": "sbxh_webtoon",
@@ -10,8 +10,8 @@
         "title": "h1.hero-v2-title",
         "author": "div.hero-v2-author",
         "thumb": {
-          "selector": "div.hero-v2-thumb img",
-          "attr": "src"
+          "selector": "meta[property='og:image']",
+          "attr": "content"
         },
         "status": "span.pill-status",
         "tags": "div.hero-v2-tags"
@@ -29,13 +29,18 @@
       },
       "viewer": {
         "fetchMethod": "iframe",
-        "remove": [".a28415453-br", "[aria-label='배너 광고']"],
         "imageContainer": "div.vw-imgs",
-        "imageItem": "img:not(.a28415453-br img, button img)",
+        "imageItem": "img",
         "lazyAttrOptions": [
           "data-src",
           "data-lazy",
           "src"
+        ],
+        "removeElements": [
+          "div[aria-label='배너']",
+          "div[data-adblock-root='1']",
+          "button[data-bp='1']",
+          "button[aria-label*='광고문의']"
         ]
       }
     },
@@ -48,8 +53,8 @@
         "title": "h1.hero-v2-title",
         "author": "div.hero-v2-author",
         "thumb": {
-          "selector": "div.hero-v2-thumb img",
-          "attr": "src"
+          "selector": "meta[property='og:image']",
+          "attr": "content"
         },
         "status": "span.pill-status",
         "tags": "div.hero-v2-tags"
@@ -67,13 +72,18 @@
       },
       "viewer": {
         "fetchMethod": "iframe",
-        "remove": [".a28415453-br", "[aria-label='배너 광고']"],
         "imageContainer": "div.vw-imgs",
-        "imageItem": "img:not(.a28415453-br img, button img)",
+        "imageItem": "img",
         "lazyAttrOptions": [
           "data-src",
           "data-lazy",
           "src"
+        ],
+        "removeElements": [
+          "div[aria-label='배너']",
+          "div[data-adblock-root='1']",
+          "button[data-bp='1']",
+          "button[aria-label*='광고문의']"
         ]
       }
     },
@@ -86,19 +96,19 @@
         "title": "div.nd-info h1",
         "author": "div.nd-meta span:first-child",
         "thumb": {
-          "selector": "div.nd-thumb img",
-          "attr": "src"
+          "selector": "meta[property='og:image']",
+          "attr": "content"
         },
         "status": "span.nv-badge",
         "tags": "div.hero-v2-tags"
       },
       "list": {
         "container": "ul.novel-eps",
-        "item": "li",
+        "item": "li.novel-ep-row",
         "num": "span.ne-num",
         "title": "span.ne-title",
         "link": {
-          "selector": "a",
+          "selector": "a.novel-ep-link",
           "attr": "href"
         },
         "date": "span.ne-date"
@@ -110,11 +120,16 @@
           "cookieName": "nv",
           "clientHeader": "shadow-v3"
         },
-        "remove": [".a28415453-br", "[aria-label='배너 광고']"],
         "novelContent": "article.novel-viewer",
         "imageContainer": "article.novel-viewer",
         "imageItem": "p",
-        "lazyAttrOptions": []
+        "lazyAttrOptions": [],
+        "removeElements": [
+          "div[aria-label='배너']",
+          "div[data-adblock-root='1']",
+          "button[data-bp='1']",
+          "button[aria-label*='광고문의']"
+        ]
       }
     }
   ]
