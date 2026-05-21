@@ -12,8 +12,8 @@
       "title": "h1.hero-v2-title",
       "author": "div.hero-v2-author",
       "thumb": {
-        "selector": "div.hero-v2-thumb img",
-        "attr": "src"
+        "selector": "meta[property=\"og:image\"]",
+        "attr": "content"
       },
       "status": "span.pill-status",
       "tags": "div.hero-v2-tags"
@@ -33,10 +33,10 @@
       "fetchMethod": "iframe",
       "remove": [
         ".a28415453-br",
-        "[aria-label='배너 광고']"
+        "[aria-label='배너']"
       ],
       "imageContainer": "div.vw-imgs",
-      "imageItem": "img:not(.a28415453-br img, button img)",
+      "imageItem": "img",
       "lazyAttrOptions": [
         "src",
         "data-src",
@@ -57,8 +57,8 @@
       "title": "h1.hero-v2-title",
       "author": "div.hero-v2-author",
       "thumb": {
-        "selector": "div.hero-v2-thumb img",
-        "attr": "src"
+        "selector": "meta[property=\"og:image\"]",
+        "attr": "content"
       },
       "status": "span.pill-status",
       "tags": "div.hero-v2-tags"
@@ -78,10 +78,10 @@
       "fetchMethod": "iframe",
       "remove": [
         ".a28415453-br",
-        "[aria-label='배너 광고']"
+        "[aria-label='배너']"
       ],
       "imageContainer": "div.vw-imgs",
-      "imageItem": "img:not(.a28415453-br img, button img)",
+      "imageItem": "img",
       "lazyAttrOptions": [
         "src",
         "data-src",
