@@ -1,5 +1,5 @@
 {
-  "version": "1.0.4",
+  "version": "1.0.5",
   "rules": [
     {
       "id": "sbxh_webtoon",
@@ -108,7 +108,7 @@
         "decryptApi": {
           "endpoint": "/api/novel-content",
           "cookieName": "nv",
-          "clientHeader": "shadow-v2"
+          "clientHeader": "shadow-v3"
         },
         "remove": [".a28415453-br", "[aria-label='배너 광고']"],
         "novelContent": "article.novel-viewer",
