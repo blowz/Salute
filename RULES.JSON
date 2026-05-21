@@ -1,5 +1,5 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.7",
   "rules": [
     {
       "id": "sbxh_webtoon",
@@ -10,8 +10,8 @@
         "title": "h1.hero-v2-title",
         "author": "div.hero-v2-author",
         "thumb": {
-          "selector": "meta[property='og:image']",
-          "attr": "content"
+          "selector": "div.hero-v2-thumb img",
+          "attr": "src"
         },
         "status": "span.pill-status",
         "tags": "div.hero-v2-tags"
@@ -53,8 +53,8 @@
         "title": "h1.hero-v2-title",
         "author": "div.hero-v2-author",
         "thumb": {
-          "selector": "meta[property='og:image']",
-          "attr": "content"
+          "selector": "div.hero-v2-thumb img",
+          "attr": "src"
         },
         "status": "span.pill-status",
         "tags": "div.hero-v2-tags"
@@ -96,8 +96,8 @@
         "title": "div.nd-info h1",
         "author": "div.nd-meta span:first-child",
         "thumb": {
-          "selector": "meta[property='og:image']",
-          "attr": "content"
+          "selector": "div.nd-thumb img",
+          "attr": "src"
         },
         "status": "span.nv-badge",
         "tags": "div.hero-v2-tags"
