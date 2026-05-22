@@ -91,7 +91,7 @@
   },
   {
     "id": "sbxh_novel",
-    "name": "SBXH 소",
+    "name": "SBXH 소셜",
     "urlPattern": ".*sbxh[0-9]*\\..*/novel/.*",
     "category": "Novel",
     "idExtraction": {
